@@ -37,7 +37,22 @@ main {
 }
 
 img {
-  width: 310px;
+  width: 100%;
+  display: block;
+}
+
+.pic {
+  position: relative;
+}
+
+.pic::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: hsl(277deg 64% 61% / 50%);
 }
 
 .content {
