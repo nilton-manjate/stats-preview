@@ -41,6 +41,10 @@ img {
   display: block;
 }
 
+#bigPic {
+  display: none;
+}
+
 .pic {
   position: relative;
 }
@@ -96,5 +100,42 @@ div {
   font-size: 12px;
 }
 
+@media only screen and (min-width: 900px) {
+  main {
+   display: flex;
+   flex-direction: row-reverse;
+   width: 930px;
+  }
 
+  .content {
+    text-align: left;
+    margin-top: 30px;
+    margin-right: 80px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+  }
 
+  h1 {
+    font-size: 36px;
+  }
+
+  #smallPic {
+    display: none;
+  }
+
+  #bigPic {
+    display: block;
+    width: 400px;
+    height: 100%;
+  }
+
+  .stats {
+    display: flex;
+    gap: 80px;
+    margin-top: 70px;
+  }
+
+  .number {
+    font-size: 22px;
+  }
+}
