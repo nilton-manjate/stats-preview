@@ -10,5 +10,76 @@
   --white: hsl(0, 0%, 100%); /*(main heading, stats)*/
   --pWhite: hsla(0, 0%, 100%, 0.75); /*(main paragraph)*/
   --hWhite: hsla(0, 0%, 100%, 0.6); /*(stat headings)*/
-  --inter: 'Inter', sans-serif;; /*font*/
+  --inter: 'Inter', sans-serif; /*font*/
 }
+
+/* Reseting the stylesheet */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling the body */
+body {
+  background-color: var(--veryDarkBlue);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--inter);
+}
+
+main {
+  width: 310px;
+  background-color: var(--darkDesatBlue);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+img {
+  width: 310px;
+}
+
+.content {
+  padding: 40px 25px 0px 25px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+h1 strong {
+  color: var(--softViolet);
+}
+
+.text {
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--pWhite);
+}
+
+.stats {
+  margin-top: 40px;
+}
+
+div {
+  margin-bottom: 40px;
+}
+
+.number {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.label {
+  color: var(--hWhite);
+  font-size: 12px;
+}
+
+
+
